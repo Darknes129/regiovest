@@ -1,0 +1,50 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480" width="2400" height="720" fill="none">
+  <defs>
+    <linearGradient id="whiteBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+
+  <!-- Official Monogram in Electric Blue -->
+  <g transform="translate(-120, -180) scale(1.1)">
+    <path
+      d="
+  M 190 320
+  L 236 390
+  H 412
+  C 446 390 460 410 460 439
+  C 460 468 446 488 412 488
+  H 298
+  L 446 710
+  H 538
+  L 516 510
+  L 628 710
+  L 826 360
+  H 740
+  L 628 554
+  L 538 386
+  C 555 350 515 320 430 320
+  H 190
+  Z
+"
+      fill="url(#whiteBlueGrad)"
+      stroke="#BFDBFE"
+      stroke-width="2.5"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Wordmark in crisp White -->
+  <text
+    x="680"
+    y="285"
+    font-family="system-ui, -apple-system, 'Space Grotesk', 'Plus Jakarta Sans', 'Segoe UI', sans-serif"
+    font-size="192"
+    font-weight="900"
+    letter-spacing="-4"
+    fill="#FFFFFF"
+  >RegioVest</text>
+</svg>

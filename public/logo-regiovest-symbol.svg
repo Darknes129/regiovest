@@ -1,0 +1,49 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="175 305 665 415" width="1330" height="830" fill="none">
+  <defs>
+    <!-- RegioVest Brand Blue Gradient -->
+    <linearGradient id="regioBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="40%" stop-color="#2563EB" />
+      <stop offset="85%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+
+    <!-- Subtle inner bevel highlight -->
+    <linearGradient id="bevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1E40AF" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <path
+    d="
+  M 190 320
+  L 236 390
+  H 412
+  C 446 390 460 410 460 439
+  C 460 468 446 488 412 488
+  H 298
+  L 446 710
+  H 538
+  L 516 510
+  L 628 710
+  L 826 360
+  H 740
+  L 628 554
+  L 538 386
+  C 555 350 515 320 430 320
+  H 190
+  Z
+"
+    fill="url(#regioBlueGrad)"
+    stroke="url(#bevelLight)"
+    stroke-width="3"
+    stroke-linejoin="round"
+    filter="url(#softGlow)"
+  />
+</svg>

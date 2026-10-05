@@ -1,0 +1,44 @@
+const fs = require('fs');
+
+// Let's create an SVG where the R and V are 100% unmistakably clear,
+// geometric, clean, and perfectly aligned with the official RegioVest brand logo.
+
+const svgSymbol = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" fill="none">
+  <!-- Top overhanging horizontal bar of the R -->
+  <path
+    d="M 10 24 H 56 C 74 24 86 36 86 50 C 86 64 74 74 56 74 H 28"
+    stroke="currentColor"
+    stroke-width="12"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+
+  <!-- Clean, solid vertical left stem of the R -->
+  <path
+    d="M 28 24 V 86"
+    stroke="currentColor"
+    stroke-width="12"
+    stroke-linecap="square"
+  />
+
+  <!-- Diagonal leg of the R going down-right -->
+  <path
+    d="M 44 74 L 72 102"
+    stroke="currentColor"
+    stroke-width="12"
+    stroke-linecap="square"
+  />
+
+  <!-- Right diagonal arm of the V meeting the leg at the vertex -->
+  <path
+    d="M 102 54 L 72 102"
+    stroke="currentColor"
+    stroke-width="12"
+    stroke-linecap="square"
+  />
+</svg>
+`;
+
+fs.writeFileSync('public/test_r_clear.svg', svgSymbol);
+console.log('Saved test_r_clear.svg');

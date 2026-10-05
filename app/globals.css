@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom student highlighter marker effects */
+.marker-yellow {
+  background: linear-gradient(104deg, rgba(254, 240, 138, 0) 0.8%, rgba(254, 240, 138, 0.95) 2.5%, rgba(253, 224, 71, 0.85) 96.5%, rgba(254, 240, 138, 0) 99%);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.marker-orange {
+  background: linear-gradient(104deg, rgba(254, 215, 170, 0) 0.8%, rgba(254, 215, 170, 0.95) 2.5%, rgba(251, 146, 60, 0.85) 96.5%, rgba(254, 215, 170, 0) 99%);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.marker-cyan {
+  background: linear-gradient(104deg, rgba(186, 230, 253, 0) 0.8%, rgba(186, 230, 253, 0.95) 2.5%, rgba(56, 189, 248, 0.85) 96.5%, rgba(186, 230, 253, 0) 99%);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.marker-lime {
+  background: linear-gradient(104deg, rgba(217, 249, 157, 0) 0.8%, rgba(217, 249, 157, 0.95) 2.5%, rgba(163, 230, 53, 0.85) 96.5%, rgba(217, 249, 157, 0) 99%);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Subtle grid backdrop */
+.bg-notebook-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Float subtle animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 5s ease-in-out infinite;
+}
+
+.animate-soft-float-delayed {
+  animation: softFloat 6s ease-in-out 2s infinite;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

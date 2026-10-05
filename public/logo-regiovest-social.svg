@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="110" fill="#0B1B3D"/>
+  <g transform="translate(100, 100) scale(2.8)" stroke="#FFFFFF">
+    <path
+      d="M 26 20 V 86"
+      stroke-width="12"
+      stroke-linecap="square"
+    />
+    <path
+      d="M 10 20 H 56 C 76 20 90 32 90 47 C 90 62 76 72 56 72 H 26"
+      stroke-width="12"
+      stroke-linecap="square"
+      stroke-linejoin="miter"
+    />
+    <path
+      d="M 44 72 L 72 104 L 102 52"
+      stroke-width="12"
+      stroke-linecap="square"
+      stroke-linejoin="miter"
+    />
+  </g>
+</svg>

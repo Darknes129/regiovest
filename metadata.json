@@ -1,0 +1,6 @@
+{
+  "name": "RegioVest | Materiais Estratégicos para UNICAMP",
+  "description": "Materiais digitais em PDF focados especificamente na UNICAMP: 1ª Fase, 2ª Fase, revisão e questões com resolução estratégica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
